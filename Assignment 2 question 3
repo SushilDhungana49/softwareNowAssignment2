@@ -1,0 +1,37 @@
+# Recursive function to modify one edge
+def draw_edge(length, depth):
+    if depth == 0:
+        print("Draw straight line of length", length)
+    else:
+        length = length / 3
+
+        # First segment
+        draw_edge(length, depth - 1)
+
+        # Inward triangle indentation
+        print("Turn right 60 degrees")
+        draw_edge(length, depth - 1)
+
+        print("Turn left 120 degrees")
+        draw_edge(length, depth - 1)
+
+        print("Turn right 60 degrees")
+        draw_edge(length, depth - 1)
+
+
+# Function to draw polygon
+def draw_polygon(sides, length, depth):
+    angle = 360 / sides
+    for i in range(sides):
+        print("\nDrawing side", i + 1)
+        draw_edge(length, depth)
+        print("Turn left", angle, "degrees")
+
+
+# -------- Main Program --------
+sides = int(input("Enter the number of sides: "))
+length = int(input("Enter the side length: "))
+depth = int(input("Enter the recursion depth: "))
+
+draw_polygon(sides, length, depth)
+
