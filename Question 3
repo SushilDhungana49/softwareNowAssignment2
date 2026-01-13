@@ -24,7 +24,7 @@ def draw_recursive_edge(t, length, depth):
         draw_recursive_edge(t, third, depth - 1)
 
 def main():
-    # --- PROMPTS FOR USER INPUT ---
+    # --- PROMPTS FOR USER INPUTS ---
     print("Welcome to the Fractal Pattern Generator")
     try:
         num_sides = int(input("Enter the number of sides: "))
