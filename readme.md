@@ -14,10 +14,9 @@ This program processes temperature data from multiple CSV files in the "temperat
 - Identifying station(s) with the largest temperature range (maximum minus minimum), with output saved to "largest_temp_range_station.txt". Multiple stations are listed in case of ties.
 - Determining station(s) with the most stable temperatures (smallest standard deviation) and most variable temperatures (largest standard deviation), with results saved to "temperature_stability_stations.txt". Ties are handled by listing all relevant stations.
 
-The implementation utilizes libraries such as pandas for efficient data handling.
 
 ### Question 3: Geometric Pattern Generation with Turtle Graphics
-This program uses Python's turtle module to generate a recursive geometric pattern starting from a regular polygon. The pattern applies indentation rules to each edge: dividing it into three segments, replacing the middle with an inward-pointing equilateral triangle, and recursing to the specified depth. The program prompts the user for the number of sides, side length (in pixels), and recursion depth. For example, inputs of 4 sides, 300 pixels, and depth 3 produce an intricate design.
+This program uses Python's turtle module to generate a recursive geometric pattern starting from a regular polygon. The pattern applies indentation rules to each edge: dividing it into three segments, replacing the middle with an inward-pointing equilateral triangle, and recursing to the specified depth. The program prompts the user for the number of sides, side length (in pixels), and recursion depth.
 
 ## Contributors
 - Fuad Ahmed Ananta - S399378
@@ -26,8 +25,8 @@ This program uses Python's turtle module to generate a recursive geometric patte
 - Sushil Dhungana- S399406
 
 ## Setup and Execution
-1. Clone the repository: git clone [repository-url]
-2. Ensure Python 3.x is installed, along with required libraries (e.g., pandas, numpy, turtle). Install via pip if necessary: pip install pandas numpy turtle .
+1. Clone the repository: git clone https://github.com/SushilDhungana49/softwareNowAssignment2
+2. Ensure Python 3.x is installed, along with required libraries (e.g., turtle). Install via pip if necessary: pip install turtle .
 3. Extract "assignment2.zip" to access input files such as "raw_text.txt" and the "temperatures" folder.
 4. Execute Question 1: Run the corresponding script `question1.py` and provide shift values when prompted.
 5. Execute Question 2: Run the script `question2.py` to process CSVs and generate output files.
